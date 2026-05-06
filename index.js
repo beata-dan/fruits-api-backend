@@ -1,6 +1,8 @@
 // Run the program 
+require("dotenv").config()
+const port = process.env.PORT
 const app = require("./app")
-const port = 3000
+// const port = 3000 this line is no longer required as we use the line above
 
 app.listen(port, () => {
     console.log(`Simple api listening on port ${port}`)
